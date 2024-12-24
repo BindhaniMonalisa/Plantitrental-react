@@ -14,7 +14,7 @@ const Location = () => {
               className="w-full"
             ></iframe>
           </div>
-          <span class="block text-[15px] font-semibold text-green-500 text-center">© <a href="https://flowbite.com/" class="hover:underline">Plan-it-Rentals</a> - Founded 2013</span>
+          <span className="block text-[15px] font-semibold text-tertiary text-center">© <a href="https://flowbite.com/" class="hover:underline">Plan-it-Rentals</a> - Founded 2013</span>
       </section>
     </>
   );

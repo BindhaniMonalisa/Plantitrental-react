@@ -14,17 +14,17 @@ const Hero = () => {
             <span className="text-red-600 underline">
               <Link
                 to="/herenav" 
-                className="hover:text-green-500 cursor-pointer
+                className="hover:text-tertiary cursor-pointer
                 transition duration-200 ease-linear" >HERE
               </Link>
             </span>
           </h1>
           <p className="flex flex-col font-semibold text-[20px] items-center tracking-[0.15em]">
-            <span className="text-green-600">
+            <span className="text-tertiary">
               You are browsing our{" "}
               <span className="text-red-600">American Fork, Utah </span>Location{" "}
             </span>
-            <span className="text-green-600 text-2xl">
+            <span className="text-tertiary text-2xl">
               Click{" "}
               <Link to="/location" className="text-secondary underline">
                 HERE

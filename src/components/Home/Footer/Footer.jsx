@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,33 +8,33 @@ const Footer = () => {
 <footer className="bg-primary container flex flex-col justify-center items-center pt-7 pb-5">
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div className="p-5 pr-10 text-center">
-                  <h2 className="mb-8 text-xl font-semibold uppercase tracking-[0.15rem]">Our Store</h2>
+                  <h2 className="mb-8 text-xl font-semibold uppercase text-secondary tracking-[0.15rem]">Our Store</h2>
                   <ul className="text-secondary font-semibold">
                       <li>
-                          <a href="">896 S Auto Mall Dr</a>
+                          <Link href="">896 S Auto Mall Dr</Link>
                       </li>
                       <li>
-                          <a href="" >American Fork, UT 84003</a>
+                          <Link href="" >American Fork, UT 84003</Link>
                       </li>
                       <li>
-                          <a href="">801-319-5524</a>
+                          <Link href="">801-319-5524</Link>
                       </li>
                       <li>
-                          <a href="" className="underline">info@planitrentals.com</a>
+                          <Link href="" className="underline">info@planitrentals.com</Link>
                       </li>
                   </ul>
               </div>
               <div className="p-5 pr-10 text-center">
-                  <h2 className="mb-8 text-xl font-semibold uppercase tracking-[0.15rem] text-green-600">HOURS</h2>
-                  <ul className="text-green-600 font-semibold">
+                  <h2 className="mb-8 text-xl font-semibold uppercase tracking-[0.15rem] text-tertiary">HOURS</h2>
+                  <ul className="text-tertiary font-semibold">
                       <li className="">
-                          <a href="">Mon - Fri: 9am - 5pm</a>
+                          <Link href="">Mon - Fri: 9am - 5pm</Link>
                       </li>
                       <li>
-                          <a href="">​​Saturday: 8am - Noon</a>
+                          <Link href="">​​Saturday: 8am - Noon</Link>
                       </li>
                       <li>
-                          <a href="">​​​Sunday: Closed</a>
+                          <Link href="">​​​Sunday: Closed</Link>
                       </li>
                   </ul>
               </div>
@@ -41,13 +42,13 @@ const Footer = () => {
                   <h2 className="mb-8 text-xl font-semibold uppercase tracking-[0.15rem] text-secondary">HELPFUL LINKS</h2>
                   <ul className="text-secondary font-semibold">
                       <li>
-                          <a href="#" className="underline">Cancellation Policy</a>
+                          <Link href="#" className="underline">Cancellation Policy</Link>
                       </li>
                       <li>
-                          <a href="#" className="underline">Bounce House FAQ</a>
+                          <Link to="/bounsehouse" className="underline">Bounce House FAQ</Link>
                       </li>
                       <li>
-                          <a href="#" className="underline">Order Online</a>
+                          <Link href="#" className="underline">Order Online</Link>
                       </li>
                   </ul>
               </div>

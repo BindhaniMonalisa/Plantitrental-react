@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import Logo from "../assets/logo.png";
 import { AiOutlineClose } from "react-icons/ai";
-import { RiMenuUnfoldFill } from "react-icons/ri";
+import { FiAlignJustify } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -62,7 +62,7 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-secondary shadow-md">
                   <Link
-                    to="/item1"
+                    to="/bouncehousefaq"
                     className="block px-4 py-2 hover:text-green-500 cursor-pointer transition duration-200 ease-linear"
                   >
                     Bounce Houses
@@ -160,7 +160,7 @@ const Navbar = () => {
           {menu ? (
             < AiOutlineClose size={25} onClick={handleChange} className="" />
           ) : (
-            <RiMenuUnfoldFill size={25} onClick={handleChange} />
+            <FiAlignJustify size={25} onClick={handleChange} />
           )}
         </div>
       </nav>

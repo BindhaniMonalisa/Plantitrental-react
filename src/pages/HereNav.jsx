@@ -69,7 +69,7 @@ const HereNav = () => {
             {isDropdownOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-20">
                 <Link
-                  to="/item1"
+                  to="/bouncehousefaq"
                   className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-500 transition duration-200 ease-in-out"
                 >
                   Bounce Houses
@@ -185,7 +185,7 @@ const HereNav = () => {
         {isDropdownOpen && (
           <div className="absolute mt-2 bg-white w-full flex flex-col items-start pl-6">
             <Link
-              to="/item1"
+              to="bouncehousefaq"
               className="block py-2 text-gray-900 hover:text-blue-500 transition duration-200 ease-in-out"
             >
               Bounce Houses

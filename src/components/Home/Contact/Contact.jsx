@@ -11,7 +11,7 @@ const ContactForm = () => {
         <h2 className="font-semibold text-center mb-6 text-secondary uppercase tracking-[0.20rem] text-[50px]">
           Contact Us
         </h2>
-        <form className="max-w-md mx-auto">
+        <form className="max-w-3xl mx-auto">
         <div className="grid md:grid-cols-2 md:gap-6">
             <div className="relative z-0 w-full mb-5 group">
               <input
@@ -26,7 +26,7 @@ const ContactForm = () => {
                 for="floating_first_name"
                 className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
               >
-                First name <span className="text-green-500 font-bold">*</span>
+                First name <span className="text-tertiary font-bold">*</span>
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -42,7 +42,7 @@ const ContactForm = () => {
                 for="floating_last_name"
                 className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
               >
-                Last name <span className="text-green-500 font-bold">*</span>
+                Last name <span className="text-tertiary font-bold">*</span>
               </label>
             </div>
           </div>
@@ -59,7 +59,7 @@ const ContactForm = () => {
               for="floating_email"
               className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
             >
-              Email address <span className="text-green-500 font-bold">*</span>
+              Email address <span className="text-tertiary font-bold">*</span>
             </label>
           </div>
           <div className="relative z-0 w-full mb-5 group">
@@ -75,7 +75,7 @@ const ContactForm = () => {
               for="floating_email"
               className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
             >
-              Phone <span className="text-green-500 font-bold">*</span>
+              Phone <span className="text-tertiary font-bold">*</span>
             </label>
           </div>
           <div className="relative z-0 w-full mb-5 group">
@@ -91,7 +91,7 @@ const ContactForm = () => {
               for="floating_email"
               className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
             >
-              Choose an Option <span className="text-green-500 font-bold">*</span>
+              Choose an Option <span className="text-tertiary font-bold">*</span>
             </label>
           </div>
           <div class="relative z-0 w-full mb-5 group">
@@ -109,13 +109,13 @@ const ContactForm = () => {
               for="floating_email"
               className="peer-focus:font-medium absolute text-secondary duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-lg font-semibold tracking-[0.07rem]"
             >
-              Write a message <span className="text-green-500 font-bold">*</span>
+              Write a message <span className="text-tertiary font-bold">*</span>
             </label>
           </div> 
           <div className="flex text-center items-center justify-center pt-6">   
           <button
             type="submit"
-            className="bg-secondary px-5 py-2 text-white rounded-full border-2 border-green-600 text-sm font-semibold hover:bg-green-600 hover:text-white transition duration-300 mt-[-20px] ml-0 left-[115px]"
+            className="bg-secondary px-7 py-2 text-white rounded-full border-2 border-tertiary text-sm font-semibold hover:border-secondary hover:text-white transition duration-300 mt-[-20px] ml-0 left-[115px]"
           >
             Submit
           </button>

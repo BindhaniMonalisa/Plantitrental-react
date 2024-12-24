@@ -80,7 +80,7 @@ const Feature = () => {
   return (
     <div className="bg-primary text-secondary pt-0">
       <div>
-        <h1 className="flex justify-center text-[90px] text-green-600 italic">Welcome</h1>
+        <h1 className="flex justify-center text-[90px] text-tertiary italic">Welcome</h1>
         <p className="flex text-[16px] font-semibold justify-center items-center container pb-10 ">
           We are Utah's best source for rentals of any kind! We are located in American Fork, Utah
           and rent to customers from all over Utah and those visiting our beautiful state for
