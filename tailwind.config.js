@@ -7,7 +7,9 @@ export default {
       colors:{
         primary:"#ccccc",
         secondary:"#172154",
-        tertiary:"#6FB745"
+        tertiary:"#6FB745",
+        mainbg:"#cfd8dc",
+        blurry:"#1976d2",
       },
       container:{
         center:true,

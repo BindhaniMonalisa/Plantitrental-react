@@ -1,13 +1,15 @@
 import React from 'react'
 import img1 from "../assets/BlueGreenStretchO.avif";
 import img2 from "../assets/location.png"
+import Navbar from '../components/Navbar';
 
 const Location = () => {
   return (
     <>
-    <div className="container ">
-      <div className=" flex flex-col gap-4 justify-center items-center pt-10">
-        <img src={img1} alt=""className='pt-3h-4' />
+    <Navbar/>
+    <div className="container">
+      <div className=" flex flex-col gap-4 justify-center items-center pt-10 ">
+        <img src={img1} alt=""className='pt-3h-4 mt-20' />
         <p className='text-[44px] font-semibold text-secondary'>Choose Your Location</p>
         <p className='text-[30px] text-secondary font-semibold tracking-[0.03em]'>American Frock, UT | Cedar Park, TX </p>
         <div className="relative">

@@ -13,7 +13,7 @@ const Hero = () => {
             ORDER ONLINE{" "}
             <span className="text-red-600 underline">
               <Link
-                to="/herenav" 
+                to="/home2" 
                 className="hover:text-tertiary cursor-pointer
                 transition duration-200 ease-linear" >HERE
               </Link>

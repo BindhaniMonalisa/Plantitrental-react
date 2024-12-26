@@ -12,37 +12,37 @@ const Contacts = () => {
             <h2 className="text-center mt-20 p-10 text-green-600 tracking-[0.1em] text-[25px]">
               Contact Us
             </h2>
-          <form className="p-20 bg-gray-300">
+          <form className="p-20 bg-gray-300 container">
             <div className="mb-4">
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-[500px] px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
             <div className="mb-4">
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-[500px] px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
             <div className="mb-4">
               <input
                 type="tel"
                 placeholder="Phone"
-                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-[500px] px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
             <div className="mb-4">
               <textarea
                 placeholder="Message"
-                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 h-32"
+                className="w-[500px] px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 h-32"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-2 text-white bg-red-500 rounded-md hover:bg-red-600 transition duration-300"
+              className="w-[500px] py-2 text-white bg-red-500 hover:bg-red-600 transition duration-300"
             >
               SEND
             </button>
