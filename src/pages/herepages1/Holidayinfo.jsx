@@ -51,13 +51,14 @@ const Holidayinfo = () => {
     <>
       {/* Navigation bar section */}
       <HereNav />
-
+  
       {/* Main body section */}
-      <div className="w-full p-20 bg-white">
-        <h2 className="text-center mt-9 p-10 text-secondary tracking-[0.2em] text-[25px]">
+      <div className="pt-20">
+      <div className="w-full px-4 sm:px-8 py-20 bg-white">
+        <h2 className="text-center pt-6 mb-6 sm:mb-8 text-secondary tracking-[0.2em] text-[22px] sm:text-[25px]">
           Holiday Pricing & Details
         </h2>
-
+  
         <div className="bg-gray-100 bg-opacity-60 rounded-lg shadow-lg p-6">
           {items.map((item, index) => (
             <div
@@ -66,7 +67,7 @@ const Holidayinfo = () => {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full text-left flex justify-between items-center p-2 text-green-500 text-[17px] font-semibold focus:outline-none tracking-[0.1em] bg-transparent"
+                className="w-full text-left flex justify-between items-center p-2 text-green-500 text-[16px] sm:text-[17px] font-semibold focus:outline-none tracking-[0.1em] bg-transparent"
               >
                 <span>{item.title}</span>
                 <svg
@@ -87,7 +88,7 @@ const Holidayinfo = () => {
                 </svg>
               </button>
               {activeIndex === index && (
-                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px]">
+                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px] sm:text-[15px] text-justify">
                   <p>{item.content}</p>
                   {item.content2 && <p>{item.content2}</p>}
                   {item.content3 && <p>{item.content3}</p>}
@@ -98,11 +99,12 @@ const Holidayinfo = () => {
           ))}
         </div>
       </div>
-
+      </div>
       {/* Footer section */}
-      <Footer2/>
+      <Footer2 />
     </>
   );
+  
 };
 
 export default Holidayinfo;

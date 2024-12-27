@@ -17,7 +17,10 @@ export default {
           DEFAULT:"2rem",
           sm:"1rem",
         },
-      }
+      },
+      fontFamily:{
+        custom: ["Dancing Script", "serif"],
+      },
     },
 
   },

@@ -22,6 +22,7 @@ import imge10 from "../../assets/features/imge10.avif";
 import imge11 from "../../assets/features/imge11.avif";
 import imge12 from "../../assets/features/imge12.avif";
 import Footer2 from "./Footer2";
+import HereNav from "../HereNav";
 
 
 const Main = () => {
@@ -125,134 +126,158 @@ const Main = () => {
   };
 
   return (
-      <>    
-    <div className="bg-white">
-      <div className="container pt-20">
-      {/* Carousel Section */}
-      <div className=" container pt-20">
-        <div className="relative w-full overflow-hidden">
-          <div
-            className="flex transition-transform duration-500"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {slides.map((slide) => (
-              <div key={slide.id} className="min-w-full flex-shrink-0">
-                <img
-                  src={slide.image}
-                  alt={`Slide ${slide.id}`}
-                  className="w-full h-[300px] object-cover"
-                />
+    <>
+      <HereNav />
+      <div className="bg-white">
+        <div className="container pt-10 sm:pt-20">
+          {/* Carousel Section */}
+          <div className="pt-10 sm:pt-20">
+            <div className="relative w-full overflow-hidden">
+              <div
+                className="flex transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {slides.map((slide) => (
+                  <div key={slide.id} className="min-w-full flex-shrink-0">
+                    <img
+                      src={slide.image}
+                      alt={`Slide ${slide.id}`}
+                      className="w-full h-[200px] sm:h-[300px] lg:h-[400px] object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={handlePrev}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 border-2 border-secondary rounded-full p-2"
+              >
+                <FiChevronLeft className="text-[30px] sm:text-[40px] text-red-700" />
+              </button>
+              <button
+                onClick={handleNext}
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 border-2 border-secondary rounded-full p-2"
+              >
+                <FiChevronRight className="text-[30px] sm:text-[40px] text-red-700" />
+              </button>
+            </div>
+          </div>
+  
+          {/* Welcome Section */}
+          <div className="p-6 max-w-4xl mx-auto">
+            <h1 className="text-[20px] sm:text-[24px] font-medium text-tertiary text-center pb-3">
+              Welcome
+            </h1>
+            <p className="text-secondary font-medium text-[14px] sm:text-[16px] text-justify leading-6">
+              We are Utah's best source for rentals of any kind! We are located in
+              American Fork, Utah and rent to customers from all over Utah and those
+              visiting our beautiful state for recreation and fun. Birthday parties,
+              family reunions, company parties, anniversaries, or any get together
+              can be enhanced with one of our rentals.
+            </p>
+          </div>
+  
+          {/* Image Cards Section */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            {imgdata.map(({ img, title }, index) => (
+              <div
+                key={index}
+                className="shadow-lg hover:shadow-xl transition-all duration-500 bg-white border border-solid border-secondary rounded-lg"
+              >
+                <div className="p-4 text-center">
+                  <h1 className="text-md sm:text-lg font-semibold text-tertiary underline">
+                    {title}
+                  </h1>
+                </div>
+                <div className="overflow-hidden">
+                  <img
+                    src={img}
+                    alt={title}
+                    className="mx-auto h-[150px] sm:h-[200px] lg:h-[220px] w-full object-cover transition duration-500 hover:scale-110"
+                  />
+                </div>
               </div>
             ))}
           </div>
-          <button
-            onClick={handlePrev}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 border-2 border-secondary rounded-full"
-          >
-            <FiChevronLeft className="text-[40px] text-red-700" />
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 border-2 border-secondary rounded-full"
-          >
-            <FiChevronRight className="text-[40px] text-red-700" />
-          </button>
-        </div>
-      </div>
-
-      {/* Welcome Section */}
-      <div className="p-6 max-w-4xl mx-auto">
-        <h1 className="text-[30px] font-medium text-tertiary text-center pb-3">Welcome</h1>
-        <p className="w-full max-w-full text-secondary font-medium space-y-4 text-[13px]">
-          We are Utah's best source for rentals of any kind! We are located in
-          American Fork, Utah and rent to customers from all over Utah and those
-          visiting our beautiful state for recreation and fun. Birthday parties,
-          family reunions, company parties, anniversaries, or any get together
-          can be enhanced with one of our rentals.
-        </p>
-      </div>
-
-      {/* Image Cards Section */}
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 bg-mainbg">
-        {imgdata.map(({ img, title}, index) => (
-          <div
-            key={index}
-            className="shadow-lg hover:shadow-xl transition-all duration-500 bg-white border border-solid border-secondary"
-          >
-            <div className="p-4 text-center">
-              <h1 className="text-lg font-semibold text-tertiary underline">
-                {title}
-              </h1>
-            </div>
-            <div className="overflow-hidden">
-              <img
-                src={img}
-                alt={title}
-                className="mx-auto h-[220px] w-full object-cover transition duration-500 hover:scale-110"
-              />
+  
+          {/* About Section */}
+          <div className="p-6">
+            <h1 className="text-[20px] sm:text-[24px] font-medium text-tertiary text-center pb-3">
+              About Us
+            </h1>
+            <div className="mx-auto text-secondary font-medium text-[14px] sm:text-[16px] text-justify space-y-4 leading-6">
+              <p>
+                We are a family-run business in American Fork, Utah that has found a new
+                approach to the rental business. Our focus on pricing, product selection,
+                and market research puts us above the rest.
+              </p>
+              <p>
+                We firmly believe that our new approach to the rental world will change
+                the way you look at planning parties, events, reunions, or trips. With
+                our rock-bottom prices, it just makes sense to rent!
+              </p>
+              <p>
+                Too often we hear the horror stories of renting equipment. Our extensive
+                product research, inspection, and maintenance will ensure your event is a
+                success. We take all of the hassle out of your event by becoming a
+                one-stop shop for all your needs. Planning a party in Utah? Call us up and
+                see how we can help you out. You can guarantee we have the lowest prices,
+                so you don't have to spend countless hours shopping at multiple places!
+                If you Plan-it, they will come!
+              </p>
             </div>
           </div>
-        ))}
-      </div>
-      {/* About Section */}
-      <div className="p-6">
-        <h1 className="text-[30px] font-medium text-tertiary text-center pb-3">About Us</h1>
-        <div className="mx-auto text-secondary font-medium space-y-4 text-[13px]">
-        <p>
-        We are a family-run business in American Fork, Utah that has found a new approach to the rental business. Our focus on pricing, product selection, and market research puts us above the rest.
-        </p>
-        <p>We firmly believe that our new approach to the rental world will change the way you look at planning parties, events, reunions, or trips. With our rock-bottom prices, it just makes sense to rent!</p>
-        <p>Too often we hear the horror stories of renting equipment. Our extensive product research, inspection, and maintenance will ensure your event is a success. We take all of the hassle out of your event by becoming a one-stop shop for all your needs. Planning a party in Utah? Call us up and see how we can help you out. You can guarantee we have the lowest prices, so you don't have to spend countless hours shopping at multiple places! If you Plan-it, they will come!</p>
-        </div>
-      </div>
-      {/* Contact Section */}
-      <div className="flex justify-center mb-5 items-center bg-mainbg">
-            <div className="pb-10">
-            <h2 className="text-center p-4 text-green-600 tracking-[0.1em] text-[25px]">
-              Contact Us
-            </h2>
-          <form className=" bg-gray-300 shadow-md p-5">
-            <div className="mb-4 w-[550px]">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full px-2 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
+  
+          {/* Contact Section */}
+          <div className="flex justify-center mb-5 items-center bg-mainbg">
+            <div className="pb-10 w-full px-4 sm:px-8 lg:px-20">
+              <h2 className="text-center mb-6 text-green-600 tracking-[0.1em] text-[22px] sm:text-[25px] font-semibold">
+                Contact Us
+              </h2>
+              <form className="bg-gray-300 shadow-md p-6 sm:p-8 rounded-lg max-w-lg mx-auto">
+                <div className="mb-4">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md"
+                  />
+                </div>
+                <div className="mb-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md"
+                  />
+                </div>
+                <div className="mb-4">
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md"
+                  />
+                </div>
+                <div className="mb-4">
+                  <textarea
+                    placeholder="Message"
+                    className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-md h-32"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full py-2 text-white bg-red-500 hover:bg-red-600 transition duration-300 rounded-md"
+                >
+                  SEND
+                </button>
+              </form>
             </div>
-            <div className="mb-4">
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full px-2 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
-            </div>
-            <div className="mb-4">
-              <input
-                type="tel"
-                placeholder="Phone"
-                className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
-            </div>
-            <div className="mb-4">
-              <textarea
-                placeholder="Message"
-                className="w-full px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 h-32"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full py-2 text-white bg-red-500 rounded-md hover:bg-red-600 transition duration-300"
-            >
-              SEND
-            </button>
-          </form>
           </div>
+          <Footer2 />
         </div>
-        <Footer2/>
-      </div>
       </div>
     </>
   );
+  
+  
+  
 };
 
 export default Main;

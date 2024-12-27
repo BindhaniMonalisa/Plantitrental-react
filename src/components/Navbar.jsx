@@ -194,7 +194,7 @@ const Navbar = () => {
           {isDropdownOpen && (
             <div className="absolute top-full right-10 mt-2 w-48 bg-white shadow-md">
               <Link
-                to="/item1"
+                to="/bouncehousefaq"
                 className="block px-4 py-2  hover:text-green-500 cursor-pointer transition duration-200 ease-linear"
               >
                 Bounce Houses

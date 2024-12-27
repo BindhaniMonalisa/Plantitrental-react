@@ -13,16 +13,19 @@ import imge10 from "../../../assets/features/imge10.avif"
 import imge11 from "../../../assets/features/imge11.avif"
 import imge12 from "../../../assets/features/imge12.avif"
 
-const FeatureData=[
+
+const featureData=[
     {
         img:imge1,
         title:"All Items",
-        description:"View our full Utah rental inventory.  For easier browsing, choose a specific category."
+        description:"View our full Utah rental inventory.  For easier browsing, choose a specific category.",
+        
     },
     {
         img:imge2,
         title:"Bounce Houses",
-        description:"The best and easiest party you'll ever plan!  Plan-it Rentals is Utah's #1 rental company."
+        description:"The best and easiest party you'll ever plan!  Plan-it Rentals is Utah's #1 rental company.",
+        link: '/bouncehousefaq',
     },
     {
         img:imge3,
@@ -79,9 +82,9 @@ const FeatureData=[
 const Feature = () => {
   return (
     <div className="bg-primary text-secondary pt-0">
-      <div>
-        <h1 className="flex justify-center text-[90px] text-tertiary italic">Welcome</h1>
-        <p className="flex text-[16px] font-semibold justify-center items-center container pb-10 ">
+      <div className='max-w-3xl mx-auto '>
+        <h1 className="flex justify-center text-[90px] text-tertiary font-[custom] font-">Welcome</h1>
+        <p className="flex text-[16px] font-semibold items-center container pb-10 text-justify ">
           We are Utah's best source for rentals of any kind! We are located in American Fork, Utah
           and rent to customers from all over Utah and those visiting our beautiful state for
           recreation and fun. Birthday parties, family reunions, company parties, anniversaries, or
@@ -95,8 +98,8 @@ const Feature = () => {
         </p>
       </div>
       <div className="pl-4 pr-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        {FeatureData.map((item, index) => (
-          <FeatureCard key={index} {...item} />
+        {featureData.map((item, index) => (
+          <FeatureCard key={index} {...item}/>
         ))}
       </div>
     </div>

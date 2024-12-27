@@ -22,7 +22,7 @@ const Footer = () => {
                       </li>
                   </ul>
               </div>
-              <div className="p-5 pr-10 text-center">
+              <div className="p-5  text-center">
                   <h2 className="mb-5 text-xl font-semibold uppercase text-green-500">HOURS</h2>
                   <ul className="text-secondary text-[15px]">
                       <li className="">

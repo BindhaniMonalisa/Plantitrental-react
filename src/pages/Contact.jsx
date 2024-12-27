@@ -8,8 +8,8 @@ const Contact = () => {
     <>
       <Navbar />
       <Hero />
-      <div className="flex justify-center items-center h-screen bg-fixed bg-cover bg-center">
-        <div className="max-w-3xl mx-auto p-6">
+      <div className="flex justify-center items-center container">
+        <div className="w-full mx-auto p-6">
           <h2 className="font-semibold text-center mt-5 text-secondary uppercase tracking-[0.20rem] text-[50px]">
             Contact Us
           </h2>

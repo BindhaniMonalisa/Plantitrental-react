@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../../components/Navbar'
 import Hero from "../../components/Home/Hero/Hero"
 import Footer from "../../components/Home/Footer/Footer"
@@ -86,19 +85,19 @@ const BounceHouseFaq = () => {
       <Navbar />
       <Hero />
       <div className="">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="mt-6 text-sm leading-7 text-gray-700 text-center">
-            <div className=" max-w-3xl mx-auto">
-              <h1 className='text-secondary font-semibold text-[35px] mb-4 p-2 tracking-[0.01em]'>
+            <div className="max-w-3xl mx-auto">
+              <h1 className="text-secondary font-semibold text-[28px] sm:text-[35px] mb-4 p-2 tracking-[0.01em]">
                 A New Approach To The Bounce House Industry!
               </h1>
-              <p className='text-secondary font-semibold text-[16px] text-justify'>
-                We believe the bounce house industry is not practical for a kids backyard party. Beyond the prices being incredibly expensive, you have 2-4 guys coming into your yard to deliver a massively heavy unit for just a couple hours of use.  So we built our whole business around a new, more cost effective solution!  All of our inflatables are custom built for our company.  We have unique designs that no other company has, and they are built to be incredibly durable and lightweight for easy transportation!  Come pickup a unit in the morning (loaded by our staff) and return the next morning (unloaded by our staff).  Setup is a breeze, and we include everything you need with an instructional video.  Come see how we've become Utah's top rental company with thousands and thousands of rentals under our belt!
+              <p className="text-secondary font-medium text-[14px] sm:text-[16px] text-justify">
+                We believe the bounce house industry is not practical for a kids backyard party. Beyond the prices being incredibly expensive, you have 2-4 guys coming into your yard to deliver a massively heavy unit for just a couple hours of use. So we built our whole business around a new, more cost-effective solution! All of our inflatables are custom built for our company. We have unique designs that no other company has, and they are built to be incredibly durable and lightweight for easy transportation! Come pick up a unit in the morning (loaded by our staff) and return the next morning (unloaded by our staff). Setup is a breeze, and we include everything you need with an instructional video. Come see how we've become Utah's top rental company with thousands and thousands of rentals under our belt!
               </p>
             </div>
           </div>
-          <div className="mt-5 p-4 border-4 border-tertiary shadow-md flex flex-row items-center justify-between max-w-4xl mx-auto">
-            <ul className="list-disc pl-2 text-[18px] text-secondary font-semibold">
+          <div className="mt-5 p-4 border-4 border-tertiary shadow-md flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto">
+            <ul className="list-disc pl-4 text-[16px] sm:text-[18px] text-secondary font-medium">
               <li>The Best Prices You'll Find</li>
               <li>Lightweight & Easy To Setup</li>
               <li>All Day Rentals (Saturday renters get Sunday for free!)</li>
@@ -107,25 +106,25 @@ const BounceHouseFaq = () => {
               <li>No intrusive setups with strangers in your yard</li>
               <li>Custom & Unique Designs only our company has!</li>
             </ul>
-            <div className="text-center mt-4">
+            <div className="text-center mt-4 md:mt-0">
               <div className="inline-block text-tertiary rounded-full pr-6">
-                <span className="text-[100px] font-bold">★</span>
+                <span className="text-[80px] sm:text-[100px] font-bold">★</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="container ">
-        <div className=" flex flex-col item-center text-center gap-4 mt-6 text-secondary">
-          <h1 className='font-semibold text-[25px] underline'>Bounce House FAQ</h1>
-          <h2 className='text-[72px] font-bold'>Bounce Houses</h2>
-          <p className='text-[25px] font-semibold underline text-red-500'>2024 Holiday Pricing & Details</p>
-          <hr className='border-2 border-tertiary w-10 mx-auto'/>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center text-center gap-4 mt-6 text-secondary">
+          <h1 className="font-semibold text-[20px] sm:text-[25px] underline">Bounce House FAQ</h1>
+          <h2 className="text-[48px] sm:text-[72px] font-bold">Bounce Houses</h2>
+          <p className="text-[18px] sm:text-[25px] font-semibold underline text-red-500">2024 Holiday Pricing & Details</p>
+          <hr className="border-2 border-tertiary w-10 mx-auto" />
         </div>
         <div className="min-h-screen py-10">
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {items.map((item, index) => (
-              <div key={index} className="relative group w-60 mx-4 my-4">
+              <div key={index} className="relative group w-full mx-auto">
                 <div className="absolute top-[-7px] left-0 bg-tertiary text-white font-semibold text-sm px-2 py-1 z-10">
                   {item.label}
                 </div>
@@ -133,7 +132,7 @@ const BounceHouseFaq = () => {
                   <img
                     src={item.image1}
                     alt={item.title}
-                    className="w-full h-40 object-cover group-hover:hidden"
+                    className="w-full h-40 object-cover group-hover:hidden rounded-lg"
                   />
                   <img
                     src={item.image2}
@@ -142,7 +141,9 @@ const BounceHouseFaq = () => {
                   />
                 </div>
                 <div className="text-center mt-2">
-                  <p className="font-semibold text-[15px] text-secondary">{item.title} | {item.price}</p>
+                  <p className="font-semibold text-[14px] sm:text-[15px] text-secondary">
+                    {item.title} | {item.price}
+                  </p>
                 </div>
               </div>
             ))}
@@ -153,6 +154,7 @@ const BounceHouseFaq = () => {
       <Location />
     </>
   );
+  
 }
 
 export default BounceHouseFaq;

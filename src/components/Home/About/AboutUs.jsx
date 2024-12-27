@@ -11,7 +11,7 @@ const AboutUs = () => {
           <h1 className="font-semibold text-2xl text-green-600 tracking-[0.20rem] text-center p-4">
             About Us
           </h1>
-          <div className="text-secondary font-semibold space-y-3 text-[15px]">
+          <div className="text-secondary font-semibold space-y-3 text-[15px] text-justify p-2">
             <p>
               We are a family-run business in American Fork, Utah that has found a new approach to the rental business. Our focus on pricing, product selection, and market research puts us above the rest.
             </p>

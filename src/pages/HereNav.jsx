@@ -183,22 +183,22 @@ const HereNav = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } md:hidden absolute bg-mainbg w-full z-10 flex flex-col items-center py-4 gap-4 transition-transform duration-300`}
+          } md:hidden absolute  bg-secondary mt-[90px] w-full z-10 flex flex-col justify-center items-center py-2 gap-4 transition-transform duration-300`}
         >
           <Link
             to="/home2"
-            className="text-gray-900 hover:text-blurry transition duration-200 ease-in-out"
+            className="text-white hover:text-blurry transition duration-200 ease-in-out"
           >
             Home
           </Link>
           <div className="relative">
             <button
-              className="text-gray-900 hover:text-blurry transition duration-200 ease-in-out flex items-center justify-between w-full"
+              className="text-white hover:text-blurry transition duration-200 ease-in-out flex items-center justify-between w-full"
               onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
             >
               Rental Items
               {isMobileDropdownOpen ? (
-                <AiOutlineClose className="ml-2 text-secondary"/>
+                <AiOutlineClose className="ml-2 text-white"/>
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -283,26 +283,25 @@ const HereNav = () => {
           </div>
           <Link
             to="/policie"
-            className="text-gray-900 hover:text-blurry transition duration-200 ease-in-out"
+            className="text-white hover:text-blurry transition duration-200 ease-in-out"
           >
             Policies
           </Link>
           <Link
             to="/holidayinfo"
-            className="text-gray-900 hover:text-blurry transition duration-200 ease-in-out"
+            className="text-white hover:text-blurry transition duration-200 ease-in-out"
           >
             Holiday Info
           </Link>
           <Link
             to="/contacts"
-            className="text-gray-900 hover:text-blurry transition duration-200 ease-in-out"
+            className="text-white hover:text-blurry transition duration-200 ease-in-out"
           >
             contact
-          </Link>
-          
+          </Link>         
         </div>
         <div className="pt-6 pr-4">
-        <IoMdCart className="text-[50px]"/>
+        <IoMdCart className="text-[45px]"/>
         </div>
         </div>
         {/* Call Info */}

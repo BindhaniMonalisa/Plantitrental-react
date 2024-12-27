@@ -66,7 +66,7 @@ const Bounsehouse = () => {
 
       {/* Main body section */}
       <div className="w-full p-20 bg-white">
-        <h2 className="text-center mt-9 p-10 text-secondary tracking-[0.1em] text-[25px]">
+        <h2 className="text-center mt-9 p-10 text-secondary tracking-[0.1em] text-[25px] ">
         Bounce House FAQ
         </h2>
 
@@ -99,11 +99,8 @@ const Bounsehouse = () => {
                 </svg>
               </button>
               {activeIndex === index && (
-                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px]">
+                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px] text-justify">
                   <p>{item.content}</p>
-                  {item.content2 && <p>{item.content2}</p>}
-                  {item.content3 && <p>{item.content3}</p>}
-                  {item.content4 && <p>{item.content4}</p>}
                 </div>
               )}
             </div>

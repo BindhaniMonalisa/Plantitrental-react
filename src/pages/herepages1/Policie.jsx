@@ -54,14 +54,15 @@ const Policie = () => {
     <>
       {/* Navigation bar section */}
       <HereNav />
-
+  
       {/* Main body section */}
-      <div className="w-full p-20 bg-white">
-        <h2 className="text-center mt-9 p-10 text-secondary tracking-[0.2em] text-[25px]">
+      <div className="pt-20">
+      <div className="w-full px-4 sm:px-8 lg:px-20 py-10 bg-white">
+        <h2 className="text-center pt-10 mb-6 text-secondary tracking-[0.2em] text-[22px] sm:text-[25px] font-semibold">
           Policies
         </h2>
-
-        <div className="bg-gray-100 bg-opacity-60 rounded-lg shadow-lg p-6">
+  
+        <div className="bg-gray-100 bg-opacity-60 rounded-lg shadow-lg p-4 sm:p-6">
           {items.map((item, index) => (
             <div
               key={index}
@@ -69,7 +70,7 @@ const Policie = () => {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full text-left flex justify-between items-center p-2 text-green-500 text-[17px] font-semibold focus:outline-none tracking-[0.1em] bg-transparent"
+                className="w-full text-left flex justify-between items-center p-3 text-green-500 text-[16px] sm:text-[17px] font-semibold focus:outline-none tracking-[0.1em] bg-transparent"
               >
                 <span>{item.title}</span>
                 <svg
@@ -90,7 +91,7 @@ const Policie = () => {
                 </svg>
               </button>
               {activeIndex === index && (
-                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px]">
+                <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 text-[14px] sm:text-[15px] text-justify">
                   <p>{item.content}</p>
                   {item.content2 && <p>{item.content2}</p>}
                   {item.content3 && <p>{item.content3}</p>}
@@ -101,11 +102,13 @@ const Policie = () => {
           ))}
         </div>
       </div>
-
+      </div>
+  
       {/* Footer section */}
       <Footer2 />
     </>
   );
+  
 };
 
 export default Policie;

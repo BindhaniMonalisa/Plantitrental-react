@@ -100,7 +100,7 @@ const Dropdown = () => {
                 </button>
                 {/* Dropdown Content */}
                 {activeIndex === index && (
-                  <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 font-semibold text-[14px]">
+                  <div className="p-4 bg-opacity-80 text-secondary rounded-b-lg space-y-3 font-semibold text-[14px] text-justify">
                     <p>{item.content}</p>
                     {item.content2 && <p>{item.content2}</p>}
                     {item.content3 && <p>{item.content3}</p>}
